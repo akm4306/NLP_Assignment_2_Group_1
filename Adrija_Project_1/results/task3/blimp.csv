@@ -1,0 +1,11 @@
+paradigm,category,pairs,KN (Task 1),AWD (Task 2),hybrid (Task 3),ties,fixed_vs_awd,broken_vs_awd
+determiner_noun_agreement_1,morphology,1000,0.499,0.71,0.664,86,13,59
+regular_plural_subject_verb_agreement_1,morphology,1000,0.628,0.737,0.689,22,24,72
+irregular_past_participle_verbs,morphology,1000,0.461,0.746,0.679,31,16,83
+anaphor_number_agreement,morphology,1000,0.37,0.847,0.802,0,9,54
+wh_vs_that_no_gap,syntax,1000,0.963,0.965,0.96,0,3,8
+adjunct_island,syntax,1000,0.295,0.569,0.542,0,34,61
+passive_1,syntax,1000,0.531,0.598,0.596,19,9,11
+existential_there_quantifiers_1,semantics,1000,0.873,0.978,0.985,0,10,3
+superlative_quantifiers_1,semantics,1000,0.675,0.587,0.605,0,34,16
+sentential_negation_npi_licensor_present,semantics,1000,0.996,1.0,1.0,0,0,0

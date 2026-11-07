@@ -1,0 +1,122 @@
+{
+  "classical_model": "Kneser–Ney (d=0.75, λ=0.8)",
+  "neural_model": "AWD-LSTM (best epoch 50)",
+  "omega_grid": [
+    {
+      "ω": 0.0,
+      "validation PPL": 90.84790381573636,
+      "test PPL": 87.41242724907204,
+      "BLiMP overall": 0.7737
+    },
+    {
+      "ω": 0.1,
+      "validation PPL": 86.87853439162963,
+      "test PPL": 84.21633180063775,
+      "BLiMP overall": 0.7522
+    },
+    {
+      "ω": 0.2,
+      "validation PPL": 87.81912098586743,
+      "test PPL": 85.25934490227347,
+      "BLiMP overall": 0.743
+    },
+    {
+      "ω": 0.3,
+      "validation PPL": 90.31812425181172,
+      "test PPL": 87.75575695733373,
+      "BLiMP overall": 0.7337
+    },
+    {
+      "ω": 0.4,
+      "validation PPL": 94.13332994337068,
+      "test PPL": 91.50159732723306,
+      "BLiMP overall": 0.7262
+    },
+    {
+      "ω": 0.5,
+      "validation PPL": 99.40963895138187,
+      "test PPL": 96.64459504794783,
+      "BLiMP overall": 0.7156
+    },
+    {
+      "ω": 0.6,
+      "validation PPL": 106.58700525689378,
+      "test PPL": 103.60914831220053,
+      "BLiMP overall": 0.707
+    },
+    {
+      "ω": 0.7,
+      "validation PPL": 116.57448654747279,
+      "test PPL": 113.263503696104,
+      "BLiMP overall": 0.7007
+    },
+    {
+      "ω": 0.8,
+      "validation PPL": 131.3695754096327,
+      "test PPL": 127.50382135981255,
+      "BLiMP overall": 0.6898
+    },
+    {
+      "ω": 0.9,
+      "validation PPL": 156.64219734270682,
+      "test PPL": 151.67220429658826,
+      "BLiMP overall": 0.6793
+    },
+    {
+      "ω": 1.0,
+      "validation PPL": 243.95362873646786,
+      "test PPL": 233.2937586719458,
+      "BLiMP overall": 0.6291
+    }
+  ],
+  "best_omega": 0.1,
+  "perplexity": {
+    "valid": 86.87853439162963,
+    "test": 84.21633180063775
+  },
+  "blimp_per_paradigm": {
+    "determiner_noun_agreement_1": 0.664,
+    "regular_plural_subject_verb_agreement_1": 0.689,
+    "irregular_past_participle_verbs": 0.679,
+    "anaphor_number_agreement": 0.802,
+    "wh_vs_that_no_gap": 0.96,
+    "adjunct_island": 0.542,
+    "passive_1": 0.596,
+    "existential_there_quantifiers_1": 0.985,
+    "superlative_quantifiers_1": 0.605,
+    "sentential_negation_npi_licensor_present": 1.0
+  },
+  "blimp_ties_per_paradigm": {
+    "determiner_noun_agreement_1": 86,
+    "regular_plural_subject_verb_agreement_1": 22,
+    "irregular_past_participle_verbs": 31,
+    "anaphor_number_agreement": 0,
+    "wh_vs_that_no_gap": 0,
+    "adjunct_island": 0,
+    "passive_1": 19,
+    "existential_there_quantifiers_1": 0,
+    "superlative_quantifiers_1": 0,
+    "sentential_negation_npi_licensor_present": 0
+  },
+  "blimp_overall": 0.7522,
+  "comparison": [
+    {
+      "model": "Task 1: Kneser–Ney (d=0.75, λ=0.8)",
+      "validation PPL": 243.9536287364683,
+      "test PPL": 233.29375867194372,
+      "BLiMP overall": 0.6291
+    },
+    {
+      "model": "Task 2: AWD-LSTM (best epoch 50)",
+      "validation PPL": 90.84790381573636,
+      "test PPL": 87.41242724907204,
+      "BLiMP overall": 0.7737
+    },
+    {
+      "model": "Task 3: hybrid, ω = 0.1",
+      "validation PPL": 86.87853439162963,
+      "test PPL": 84.21633180063775,
+      "BLiMP overall": 0.7522
+    }
+  ]
+}

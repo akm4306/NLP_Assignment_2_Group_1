@@ -1,0 +1,53 @@
+{
+  "config": {
+    "emb_size": 400,
+    "hidden_size": 1150,
+    "layers": 3,
+    "tied_weights": true,
+    "dropconnect": 0.5,
+    "embedding_dropout": 0.1,
+    "output_dropout": 0.4,
+    "optimizer": "NT-ASGD",
+    "lr": 30,
+    "nonmono": 5,
+    "batch_size": 80,
+    "bptt": 70,
+    "clip": 0.25,
+    "epochs": 50,
+    "seed": 1111,
+    "device": "cuda"
+  },
+  "n_parameters": 32242402,
+  "training_hours": 2.8265346463521324,
+  "nt_asgd_switch_epoch": 42,
+  "best_epoch": 50,
+  "perplexity": {
+    "valid": 90.84790381573636,
+    "test": 87.41242724907204
+  },
+  "blimp_per_paradigm": {
+    "determiner_noun_agreement_1": 0.71,
+    "regular_plural_subject_verb_agreement_1": 0.737,
+    "irregular_past_participle_verbs": 0.746,
+    "anaphor_number_agreement": 0.847,
+    "wh_vs_that_no_gap": 0.965,
+    "adjunct_island": 0.569,
+    "passive_1": 0.598,
+    "existential_there_quantifiers_1": 0.978,
+    "superlative_quantifiers_1": 0.587,
+    "sentential_negation_npi_licensor_present": 1.0
+  },
+  "blimp_ties_per_paradigm": {
+    "determiner_noun_agreement_1": 86,
+    "regular_plural_subject_verb_agreement_1": 22,
+    "irregular_past_participle_verbs": 31,
+    "anaphor_number_agreement": 0,
+    "wh_vs_that_no_gap": 0,
+    "adjunct_island": 0,
+    "passive_1": 19,
+    "existential_there_quantifiers_1": 0,
+    "superlative_quantifiers_1": 0,
+    "sentential_negation_npi_licensor_present": 0
+  },
+  "blimp_overall": 0.7737
+}
