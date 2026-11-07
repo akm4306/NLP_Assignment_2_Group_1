@@ -1,0 +1,66 @@
+{
+  "vocab_size": 30000,
+  "predictable_tokens_V": 30002,
+  "order": 4,
+  "kn_discount": 0.75,
+  "kn_lambda_grid_valid_ppl": {
+    "0.1": 452.0557217892101,
+    "0.2": 351.0668619446844,
+    "0.3": 303.1341998603209,
+    "0.4": 275.6730309918224,
+    "0.5": 259.011113847989,
+    "0.6": 249.20146429125836,
+    "0.7": 244.43282647939847,
+    "0.8": 243.9536287364683,
+    "0.9": 247.77522762068313
+  },
+  "kn_best_lambda": 0.8,
+  "perplexity": {
+    "Add-k (k=1)": {
+      "valid": 21546.984984241346,
+      "test": 21259.14443085995
+    },
+    "Add-k (k=0.5)": {
+      "valid": 19902.88323981718,
+      "test": 19585.380170744833
+    },
+    "Add-k (k=0.1)": {
+      "valid": 16250.310686962928,
+      "test": 15893.698870941678
+    },
+    "Good–Turing": {
+      "valid": 9781.202542586421,
+      "test": 9566.913065059514
+    },
+    "Kneser–Ney (d=0.75, λ=0.8)": {
+      "valid": 243.9536287364683,
+      "test": 233.29375867194372
+    }
+  },
+  "best_variant": "Kneser–Ney (d=0.75, λ=0.8)",
+  "blimp_per_paradigm": {
+    "determiner_noun_agreement_1": 0.499,
+    "regular_plural_subject_verb_agreement_1": 0.628,
+    "irregular_past_participle_verbs": 0.461,
+    "anaphor_number_agreement": 0.37,
+    "wh_vs_that_no_gap": 0.963,
+    "adjunct_island": 0.295,
+    "passive_1": 0.531,
+    "existential_there_quantifiers_1": 0.873,
+    "superlative_quantifiers_1": 0.675,
+    "sentential_negation_npi_licensor_present": 0.996
+  },
+  "blimp_ties_per_paradigm": {
+    "determiner_noun_agreement_1": 86,
+    "regular_plural_subject_verb_agreement_1": 22,
+    "irregular_past_participle_verbs": 68,
+    "anaphor_number_agreement": 0,
+    "wh_vs_that_no_gap": 0,
+    "adjunct_island": 387,
+    "passive_1": 19,
+    "existential_there_quantifiers_1": 0,
+    "superlative_quantifiers_1": 0,
+    "sentential_negation_npi_licensor_present": 0
+  },
+  "blimp_overall": 0.6291
+}

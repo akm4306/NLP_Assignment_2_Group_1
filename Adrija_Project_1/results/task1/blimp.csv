@@ -1,0 +1,11 @@
+paradigm,category,pairs,correct,ties,accuracy
+determiner_noun_agreement_1,morphology,1000,499,86,0.499
+regular_plural_subject_verb_agreement_1,morphology,1000,628,22,0.628
+irregular_past_participle_verbs,morphology,1000,461,68,0.461
+anaphor_number_agreement,morphology,1000,370,0,0.37
+wh_vs_that_no_gap,syntax,1000,963,0,0.963
+adjunct_island,syntax,1000,295,387,0.295
+passive_1,syntax,1000,531,19,0.531
+existential_there_quantifiers_1,semantics,1000,873,0,0.873
+superlative_quantifiers_1,semantics,1000,675,0,0.675
+sentential_negation_npi_licensor_present,semantics,1000,996,0,0.996

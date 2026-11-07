@@ -1,0 +1,11 @@
+paradigm,category,pairs,correct,ties,accuracy,KN accuracy (Task 1)
+determiner_noun_agreement_1,morphology,1000,710,86,0.71,0.499
+regular_plural_subject_verb_agreement_1,morphology,1000,737,22,0.737,0.628
+irregular_past_participle_verbs,morphology,1000,746,31,0.746,0.461
+anaphor_number_agreement,morphology,1000,847,0,0.847,0.37
+wh_vs_that_no_gap,syntax,1000,965,0,0.965,0.963
+adjunct_island,syntax,1000,569,0,0.569,0.295
+passive_1,syntax,1000,598,19,0.598,0.531
+existential_there_quantifiers_1,semantics,1000,978,0,0.978,0.873
+superlative_quantifiers_1,semantics,1000,587,0,0.587,0.675
+sentential_negation_npi_licensor_present,semantics,1000,1000,0,1.0,0.996
