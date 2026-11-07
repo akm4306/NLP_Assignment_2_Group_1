@@ -1,0 +1,240 @@
+params: 32.2M | vocab 30001 | device cuda
+  ep 1 batch 100 | train loss 8.209 ppl 3673.8 | 667 ms/batch
+  ep 1 batch 200 | train loss 7.766 ppl 2358.4 | 667 ms/batch
+  ep 1 batch 300 | train loss 7.524 ppl 1852.1 | 694 ms/batch
+| end of epoch 1 | 304s | train ppl 1606.88 | val ppl 744.94 | SGD
+  saved best model
+  ep 2 batch 100 | train loss 6.723 ppl 831.6 | 691 ms/batch
+  ep 2 batch 200 | train loss 6.658 ppl 778.9 | 683 ms/batch
+  ep 2 batch 300 | train loss 6.600 ppl 735.4 | 681 ms/batch
+| end of epoch 2 | 297s | train ppl 703.07 | val ppl 403.90 | SGD
+  saved best model
+  ep 3 batch 100 | train loss 6.330 ppl 561.4 | 685 ms/batch
+  ep 3 batch 200 | train loss 6.296 ppl 542.6 | 677 ms/batch
+  ep 3 batch 300 | train loss 6.263 ppl 524.7 | 674 ms/batch
+| end of epoch 3 | 295s | train ppl 507.77 | val ppl 327.60 | SGD
+  saved best model
+  ep 4 batch 100 | train loss 6.092 ppl 442.3 | 668 ms/batch
+  ep 4 batch 200 | train loss 6.067 ppl 431.4 | 670 ms/batch
+  ep 4 batch 300 | train loss 6.043 ppl 421.3 | 667 ms/batch
+| end of epoch 4 | 294s | train ppl 410.14 | val ppl 273.41 | SGD
+  saved best model
+  ep 5 batch 100 | train loss 5.900 ppl 364.9 | 660 ms/batch
+  ep 5 batch 200 | train loss 5.887 ppl 360.2 | 653 ms/batch
+  ep 5 batch 300 | train loss 5.864 ppl 352.3 | 656 ms/batch
+| end of epoch 5 | 294s | train ppl 343.54 | val ppl 242.24 | SGD
+  saved best model
+  ep 6 batch 100 | train loss 5.752 ppl 314.8 | 670 ms/batch
+  ep 6 batch 200 | train loss 5.749 ppl 314.0 | 674 ms/batch
+  ep 6 batch 300 | train loss 5.722 ppl 305.5 | 668 ms/batch
+| end of epoch 6 | 294s | train ppl 298.65 | val ppl 219.00 | SGD
+  saved best model
+  ep 7 batch 100 | train loss 5.648 ppl 283.8 | 678 ms/batch
+  ep 7 batch 200 | train loss 5.634 ppl 279.7 | 671 ms/batch
+  ep 7 batch 300 | train loss 5.609 ppl 273.0 | 672 ms/batch
+| end of epoch 7 | 294s | train ppl 267.69 | val ppl 190.04 | SGD
+  saved best model
+  ep 8 batch 100 | train loss 5.534 ppl 253.2 | 659 ms/batch
+  ep 8 batch 200 | train loss 5.517 ppl 249.0 | 657 ms/batch
+  ep 8 batch 300 | train loss 5.495 ppl 243.5 | 661 ms/batch
+| end of epoch 8 | 295s | train ppl 239.06 | val ppl 174.30 | SGD
+  saved best model
+  ep 9 batch 100 | train loss 5.440 ppl 230.4 | 681 ms/batch
+  ep 9 batch 200 | train loss 5.429 ppl 227.9 | 666 ms/batch
+  ep 9 batch 300 | train loss 5.408 ppl 223.2 | 668 ms/batch
+| end of epoch 9 | 297s | train ppl 218.96 | val ppl 161.54 | SGD
+  saved best model
+  ep 10 batch 100 | train loss 5.372 ppl 215.3 | 682 ms/batch
+  ep 10 batch 200 | train loss 5.357 ppl 212.0 | 670 ms/batch
+  ep 10 batch 300 | train loss 5.336 ppl 207.6 | 670 ms/batch
+| end of epoch 10 | 300s | train ppl 203.81 | val ppl 157.11 | SGD
+  saved best model
+  ep 11 batch 100 | train loss 5.299 ppl 200.1 | 688 ms/batch
+  ep 11 batch 200 | train loss 5.288 ppl 198.0 | 684 ms/batch
+  ep 11 batch 300 | train loss 5.268 ppl 194.0 | 685 ms/batch
+| end of epoch 11 | 302s | train ppl 190.99 | val ppl 146.75 | SGD
+  saved best model
+  ep 12 batch 100 | train loss 5.256 ppl 191.7 | 672 ms/batch
+  ep 12 batch 200 | train loss 5.240 ppl 188.6 | 676 ms/batch
+  ep 12 batch 300 | train loss 5.214 ppl 183.8 | 680 ms/batch
+| end of epoch 12 | 301s | train ppl 180.43 | val ppl 139.49 | SGD
+  saved best model
+  ep 13 batch 100 | train loss 5.185 ppl 178.5 | 664 ms/batch
+  ep 13 batch 200 | train loss 5.174 ppl 176.7 | 665 ms/batch
+  ep 13 batch 300 | train loss 5.155 ppl 173.3 | 669 ms/batch
+| end of epoch 13 | 296s | train ppl 170.79 | val ppl 134.34 | SGD
+  saved best model
+  ep 14 batch 100 | train loss 5.146 ppl 171.7 | 673 ms/batch
+  ep 14 batch 200 | train loss 5.138 ppl 170.3 | 675 ms/batch
+  ep 14 batch 300 | train loss 5.115 ppl 166.6 | 673 ms/batch
+| end of epoch 14 | 296s | train ppl 164.07 | val ppl 130.09 | SGD
+  saved best model
+  ep 15 batch 100 | train loss 5.083 ppl 161.2 | 669 ms/batch
+  ep 15 batch 200 | train loss 5.088 ppl 162.1 | 784 ms/batch
+  ep 15 batch 300 | train loss 5.065 ppl 158.3 | 899 ms/batch
+| end of epoch 15 | 407s | train ppl 155.96 | val ppl 126.89 | SGD
+  saved best model
+  ep 16 batch 100 | train loss 5.041 ppl 154.6 | 679 ms/batch
+  ep 16 batch 200 | train loss 5.043 ppl 155.0 | 685 ms/batch
+  ep 16 batch 300 | train loss 5.025 ppl 152.2 | 682 ms/batch
+| end of epoch 16 | 300s | train ppl 150.17 | val ppl 123.51 | SGD
+  saved best model
+  ep 17 batch 100 | train loss 5.018 ppl 151.1 | 678 ms/batch
+  ep 17 batch 200 | train loss 5.011 ppl 150.1 | 679 ms/batch
+  ep 17 batch 300 | train loss 4.993 ppl 147.4 | 677 ms/batch
+| end of epoch 17 | 300s | train ppl 145.30 | val ppl 121.05 | SGD
+  saved best model
+  ep 18 batch 100 | train loss 4.975 ppl 144.7 | 662 ms/batch
+  ep 18 batch 200 | train loss 4.972 ppl 144.3 | 669 ms/batch
+  ep 18 batch 300 | train loss 4.957 ppl 142.2 | 678 ms/batch
+| end of epoch 18 | 298s | train ppl 139.95 | val ppl 117.78 | SGD
+  saved best model
+  ep 19 batch 100 | train loss 4.941 ppl 139.9 | 656 ms/batch
+  ep 19 batch 200 | train loss 4.943 ppl 140.1 | 670 ms/batch
+  ep 19 batch 300 | train loss 4.921 ppl 137.2 | 671 ms/batch
+| end of epoch 19 | 296s | train ppl 134.69 | val ppl 115.36 | SGD
+  saved best model
+  ep 20 batch 100 | train loss 4.919 ppl 136.9 | 667 ms/batch
+  ep 20 batch 200 | train loss 4.914 ppl 136.2 | 667 ms/batch
+  ep 20 batch 300 | train loss 4.897 ppl 133.9 | 667 ms/batch
+| end of epoch 20 | 295s | train ppl 131.32 | val ppl 114.83 | SGD
+  saved best model
+  ep 21 batch 100 | train loss 4.890 ppl 133.0 | 676 ms/batch
+  ep 21 batch 200 | train loss 4.885 ppl 132.3 | 668 ms/batch
+  ep 21 batch 300 | train loss 4.864 ppl 129.5 | 667 ms/batch
+| end of epoch 21 | 294s | train ppl 127.74 | val ppl 112.13 | SGD
+  saved best model
+  ep 22 batch 100 | train loss 4.851 ppl 127.8 | 678 ms/batch
+  ep 22 batch 200 | train loss 4.850 ppl 127.8 | 676 ms/batch
+  ep 22 batch 300 | train loss 4.835 ppl 125.8 | 678 ms/batch
+| end of epoch 22 | 296s | train ppl 124.12 | val ppl 110.34 | SGD
+  saved best model
+  ep 23 batch 100 | train loss 4.831 ppl 125.3 | 668 ms/batch
+  ep 23 batch 200 | train loss 4.833 ppl 125.5 | 671 ms/batch
+  ep 23 batch 300 | train loss 4.814 ppl 123.3 | 670 ms/batch
+| end of epoch 23 | 298s | train ppl 120.95 | val ppl 109.55 | SGD
+  saved best model
+  ep 24 batch 100 | train loss 4.808 ppl 122.5 | 676 ms/batch
+  ep 24 batch 200 | train loss 4.802 ppl 121.7 | 669 ms/batch
+  ep 24 batch 300 | train loss 4.788 ppl 120.1 | 679 ms/batch
+| end of epoch 24 | 299s | train ppl 118.10 | val ppl 107.63 | SGD
+  saved best model
+  ep 25 batch 100 | train loss 4.780 ppl 119.1 | 675 ms/batch
+  ep 25 batch 200 | train loss 4.770 ppl 118.0 | 672 ms/batch
+  ep 25 batch 300 | train loss 4.760 ppl 116.7 | 674 ms/batch
+| end of epoch 25 | 299s | train ppl 115.15 | val ppl 107.17 | SGD
+  saved best model
+  ep 26 batch 100 | train loss 4.765 ppl 117.3 | 680 ms/batch
+  ep 26 batch 200 | train loss 4.769 ppl 117.8 | 680 ms/batch
+  ep 26 batch 300 | train loss 4.747 ppl 115.3 | 683 ms/batch
+| end of epoch 26 | 296s | train ppl 113.74 | val ppl 107.41 | SGD
+  ep 27 batch 100 | train loss 4.741 ppl 114.5 | 655 ms/batch
+  ep 27 batch 200 | train loss 4.740 ppl 114.4 | 663 ms/batch
+  ep 27 batch 300 | train loss 4.723 ppl 112.5 | 667 ms/batch
+| end of epoch 27 | 296s | train ppl 110.44 | val ppl 104.15 | SGD
+  saved best model
+  ep 28 batch 100 | train loss 4.733 ppl 113.7 | 702 ms/batch
+  ep 28 batch 200 | train loss 4.728 ppl 113.1 | 686 ms/batch
+  ep 28 batch 300 | train loss 4.712 ppl 111.2 | 681 ms/batch
+| end of epoch 28 | 299s | train ppl 109.38 | val ppl 102.48 | SGD
+  saved best model
+  ep 29 batch 100 | train loss 4.707 ppl 110.8 | 673 ms/batch
+  ep 29 batch 200 | train loss 4.706 ppl 110.6 | 679 ms/batch
+  ep 29 batch 300 | train loss 4.684 ppl 108.2 | 678 ms/batch
+| end of epoch 29 | 295s | train ppl 106.87 | val ppl 101.88 | SGD
+  saved best model
+  ep 30 batch 100 | train loss 4.687 ppl 108.6 | 679 ms/batch
+  ep 30 batch 200 | train loss 4.684 ppl 108.2 | 668 ms/batch
+  ep 30 batch 300 | train loss 4.665 ppl 106.1 | 671 ms/batch
+| end of epoch 30 | 296s | train ppl 104.35 | val ppl 100.83 | SGD
+  saved best model
+  ep 31 batch 100 | train loss 4.670 ppl 106.7 | 683 ms/batch
+  ep 31 batch 200 | train loss 4.668 ppl 106.5 | 681 ms/batch
+  ep 31 batch 300 | train loss 4.651 ppl 104.7 | 677 ms/batch
+| end of epoch 31 | 303s | train ppl 102.62 | val ppl 101.18 | SGD
+  ep 32 batch 100 | train loss 4.652 ppl 104.8 | 685 ms/batch
+  ep 32 batch 200 | train loss 4.654 ppl 105.0 | 682 ms/batch
+  ep 32 batch 300 | train loss 4.637 ppl 103.2 | 687 ms/batch
+| end of epoch 32 | 300s | train ppl 101.81 | val ppl 99.65 | SGD
+  saved best model
+  ep 33 batch 100 | train loss 4.634 ppl 103.0 | 672 ms/batch
+  ep 33 batch 200 | train loss 4.636 ppl 103.1 | 668 ms/batch
+  ep 33 batch 300 | train loss 4.620 ppl 101.5 | 668 ms/batch
+| end of epoch 33 | 297s | train ppl 99.88 | val ppl 100.54 | SGD
+  ep 34 batch 100 | train loss 4.630 ppl 102.5 | 683 ms/batch
+  ep 34 batch 200 | train loss 4.620 ppl 101.5 | 671 ms/batch
+  ep 34 batch 300 | train loss 4.605 ppl 100.0 | 665 ms/batch
+| end of epoch 34 | 298s | train ppl 98.10 | val ppl 97.67 | SGD
+  saved best model
+  ep 35 batch 100 | train loss 4.612 ppl 100.6 | 662 ms/batch
+  ep 35 batch 200 | train loss 4.618 ppl 101.3 | 666 ms/batch
+  ep 35 batch 300 | train loss 4.599 ppl 99.3 | 660 ms/batch
+| end of epoch 35 | 297s | train ppl 97.65 | val ppl 98.08 | SGD
+  ep 36 batch 100 | train loss 4.598 ppl 99.3 | 681 ms/batch
+  ep 36 batch 200 | train loss 4.602 ppl 99.7 | 674 ms/batch
+  ep 36 batch 300 | train loss 4.584 ppl 97.9 | 676 ms/batch
+| end of epoch 36 | 300s | train ppl 96.46 | val ppl 96.62 | SGD
+  saved best model
+  ep 37 batch 100 | train loss 4.571 ppl 96.7 | 673 ms/batch
+  ep 37 batch 200 | train loss 4.573 ppl 96.8 | 665 ms/batch
+  ep 37 batch 300 | train loss 4.558 ppl 95.4 | 667 ms/batch
+| end of epoch 37 | 299s | train ppl 93.67 | val ppl 96.51 | SGD
+  saved best model
+  ep 38 batch 100 | train loss 4.566 ppl 96.2 | 683 ms/batch
+  ep 38 batch 200 | train loss 4.563 ppl 95.9 | 682 ms/batch
+  ep 38 batch 300 | train loss 4.547 ppl 94.4 | 674 ms/batch
+| end of epoch 38 | 298s | train ppl 93.03 | val ppl 95.32 | SGD
+  saved best model
+  ep 39 batch 100 | train loss 4.558 ppl 95.4 | 655 ms/batch
+  ep 39 batch 200 | train loss 4.559 ppl 95.5 | 667 ms/batch
+  ep 39 batch 300 | train loss 4.540 ppl 93.7 | 664 ms/batch
+| end of epoch 39 | 294s | train ppl 92.11 | val ppl 95.78 | SGD
+  ep 40 batch 100 | train loss 4.556 ppl 95.2 | 674 ms/batch
+  ep 40 batch 200 | train loss 4.549 ppl 94.6 | 669 ms/batch
+  ep 40 batch 300 | train loss 4.531 ppl 92.9 | 664 ms/batch
+| end of epoch 40 | 294s | train ppl 91.05 | val ppl 94.44 | SGD
+  saved best model
+  ep 41 batch 100 | train loss 4.534 ppl 93.2 | 663 ms/batch
+  ep 41 batch 200 | train loss 4.533 ppl 93.0 | 663 ms/batch
+  ep 41 batch 300 | train loss 4.513 ppl 91.2 | 664 ms/batch
+| end of epoch 41 | 294s | train ppl 89.99 | val ppl 94.02 | SGD
+  saved best model
+  ep 42 batch 100 | train loss 4.519 ppl 91.7 | 671 ms/batch
+  ep 42 batch 200 | train loss 4.525 ppl 92.3 | 667 ms/batch
+  ep 42 batch 300 | train loss 4.508 ppl 90.8 | 666 ms/batch
+| end of epoch 42 | 294s | train ppl 89.18 | val ppl 93.21 | SGD
+  saved best model
+  ep 43 batch 100 | train loss 4.514 ppl 91.3 | 660 ms/batch
+  ep 43 batch 200 | train loss 4.508 ppl 90.8 | 653 ms/batch
+  ep 43 batch 300 | train loss 4.496 ppl 89.6 | 661 ms/batch
+| end of epoch 43 | 294s | train ppl 87.99 | val ppl 93.45 | SGD
+  ep 44 batch 100 | train loss 4.492 ppl 89.3 | 663 ms/batch
+  ep 44 batch 200 | train loss 4.492 ppl 89.3 | 662 ms/batch
+  ep 44 batch 300 | train loss 4.483 ppl 88.5 | 668 ms/batch
+| end of epoch 44 | 293s | train ppl 87.14 | val ppl 93.29 | SGD
+  ep 45 batch 100 | train loss 4.491 ppl 89.2 | 665 ms/batch
+  ep 45 batch 200 | train loss 4.492 ppl 89.3 | 669 ms/batch
+  ep 45 batch 300 | train loss 4.473 ppl 87.6 | 670 ms/batch
+| end of epoch 45 | 294s | train ppl 86.10 | val ppl 93.22 | SGD
+  ep 46 batch 100 | train loss 4.475 ppl 87.8 | 662 ms/batch
+  ep 46 batch 200 | train loss 4.480 ppl 88.2 | 672 ms/batch
+  ep 46 batch 300 | train loss 4.460 ppl 86.5 | 675 ms/batch
+| end of epoch 46 | 294s | train ppl 85.21 | val ppl 91.39 | SGD
+  saved best model
+  ep 47 batch 100 | train loss 4.464 ppl 86.8 | 671 ms/batch
+  ep 47 batch 200 | train loss 4.467 ppl 87.1 | 674 ms/batch
+  ep 47 batch 300 | train loss 4.449 ppl 85.6 | 671 ms/batch
+| end of epoch 47 | 293s | train ppl 84.35 | val ppl 93.17 | SGD
+  ep 48 batch 100 | train loss 4.459 ppl 86.4 | 679 ms/batch
+  ep 48 batch 200 | train loss 4.460 ppl 86.5 | 677 ms/batch
+  ep 48 batch 300 | train loss 4.441 ppl 84.8 | 677 ms/batch
+| end of epoch 48 | 294s | train ppl 83.75 | val ppl 91.61 | SGD
+  ep 49 batch 100 | train loss 4.445 ppl 85.2 | 658 ms/batch
+  ep 49 batch 200 | train loss 4.449 ppl 85.5 | 662 ms/batch
+  ep 49 batch 300 | train loss 4.431 ppl 84.0 | 662 ms/batch
+| end of epoch 49 | 294s | train ppl 82.78 | val ppl 90.59 | SGD
+  saved best model
+  ep 50 batch 100 | train loss 4.437 ppl 84.5 | 667 ms/batch
+  ep 50 batch 200 | train loss 4.438 ppl 84.6 | 669 ms/batch
+  ep 50 batch 300 | train loss 4.418 ppl 83.0 | 671 ms/batch
+| end of epoch 50 | 294s | train ppl 81.90 | val ppl 92.29 | SGD

@@ -1,0 +1,65 @@
+# Task 1 - Smoothed n-gram LM results
+
+Vocabulary 30001 (30,000 + `<unk>`), 2,060,762 training tokens; evaluated on 242,088 test tokens.
+
+## Perplexity of the five smoothing variants (4-gram)
+
+| Variant | Validation PPL | Test PPL |
+|---|---|---|
+| Add-k (k=1) | 23417.08 | 23225.54 |
+| Add-k (k=0.5) | 21714.54 | 21497.86 |
+| Add-k (k=0.1) | 17782.59 | 17531.65 |
+| Good-Turing (Katz) | 287.80 | 275.94 |
+| Kneser-Ney (d=0.75, λ=0.8) | 253.71 | 243.66 |
+
+## Test perplexity by n-gram order
+
+| Variant | n=1 | n=2 | n=3 | n=4 |
+|---|---|---|---|---|
+| Add-k 1 | 827.5 | 1849.2 | 11467.6 | 23225.5 |
+| Add-k 0.5 | 826.3 | 1388.1 | 9258.5 | 21497.9 |
+| Add-k 0.1 | 825.6 | 803.4 | 5609.8 | 17531.6 |
+| Good-Turing | 825.4 | 296.2 | 267.1 | 275.9 |
+| Kneser-Ney | 825.4 | 285.3 | 242.9 | 243.7 |
+
+Good-Turing note: pure Katz back-off (no floor) gives zero probability to 225 test tokens at n=4 (perplexity = ∞), because histories whose continuations all occur > 5 times keep no back-off mass; the reported numbers use a minimum back-off mass of 0.001 for such histories.
+
+## Kneser-Ney λ grid search (validation PPL; λ=1.0 = textbook IKN, reference only)
+
+| n | λ=0.1 | λ=0.2 | λ=0.3 | λ=0.4 | λ=0.5 | λ=0.6 | λ=0.7 | λ=0.8 | λ=0.9 | λ=1 | best λ |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2 | 626.1 | 497.7 | 428.5 | 384.4 | 353.9 | 332.2 | 316.8 | 306.7 | 301.8 | 304.0 | 0.9 |
+| 3 | 492.2 | 382.8 | 329.2 | 297.6 | 277.6 | 265.0 | 257.8 | 255.2 | 257.0 | 264.6 | 0.8 |
+| 4 | 463.9 | 361.8 | 313.2 | 285.3 | 268.4 | 258.6 | 253.9 | 253.7 | 257.9 | 267.7 | 0.8 |
+
+## BLiMP accuracy (%) - best variant by validation PPL: **Kneser-Ney (d=0.75, λ=0.8)**
+
+| Paradigm | Field | Kneser-Ney (d=0.75, λ=0.8) |
+|---|---|---|
+| anaphor_gender_agreement | morphology | 23.6 |
+| determiner_noun_agreement_1 | morphology | 52.6 |
+| regular_plural_subject_verb_agreement_1 | morphology | 56.1 |
+| irregular_past_participle_adjectives | morphology | 78.6 |
+| wh_island | syntax | 52.1 |
+| adjunct_island | syntax | 34.8 |
+| drop_argument | syntax | 39.5 |
+| npi_present_1 | semantics | 40.5 |
+| principle_A_domain_1 | syntax_semantics | 97.8 |
+| existential_there_quantifiers_1 | semantics | 87.3 |
+| **Overall** | | **56.3** |
+
+### BLiMP accuracy (%) for every 4-gram variant (supplementary)
+
+| Paradigm | Field | Add-k (k=1) | Add-k (k=0.5) | Add-k (k=0.1) | Good-Turing (Katz) | Kneser-Ney (d=0.75, λ=0.8) |
+|---|---|---|---|---|---|---|
+| anaphor_gender_agreement | morphology | 1.6 | 1.6 | 1.6 | 24.1 | 23.6 |
+| determiner_noun_agreement_1 | morphology | 0.1 | 0.1 | 0.1 | 49.0 | 52.6 |
+| regular_plural_subject_verb_agreement_1 | morphology | 6.2 | 6.2 | 6.2 | 50.9 | 56.1 |
+| irregular_past_participle_adjectives | morphology | 0.0 | 0.0 | 0.0 | 73.9 | 78.6 |
+| wh_island | syntax | 8.7 | 8.8 | 8.7 | 70.7 | 52.1 |
+| adjunct_island | syntax | 6.9 | 6.7 | 6.9 | 35.5 | 34.8 |
+| drop_argument | syntax | 11.0 | 11.0 | 11.0 | 44.0 | 39.5 |
+| npi_present_1 | semantics | 2.0 | 2.0 | 2.0 | 44.8 | 40.5 |
+| principle_A_domain_1 | syntax_semantics | 0.9 | 0.9 | 0.9 | 97.6 | 97.8 |
+| existential_there_quantifiers_1 | semantics | 79.8 | 79.8 | 79.8 | 82.4 | 87.3 |
+| **Overall** | | **11.7** | **11.7** | **11.7** | **57.3** | **56.3** |

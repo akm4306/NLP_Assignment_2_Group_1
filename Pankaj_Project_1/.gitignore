@@ -1,0 +1,10 @@
+# large or regenerated files: never commit these
+checkpoints/
+checkpoints_quick/
+cache/
+cache_quick/
+results_quick/
+logs_quick/
+*.pt
+__pycache__/
+.ipynb_checkpoints/

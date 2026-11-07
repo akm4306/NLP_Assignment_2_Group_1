@@ -1,0 +1,177 @@
+{
+  "lambda_grid_validation_ppl": {
+    "0.0": 90.51282036513066,
+    "0.1": 87.45602071479007,
+    "0.2": 89.04620122816344,
+    "0.3": 92.1046607919483,
+    "0.4": 96.47201876648674,
+    "0.5": 102.34453997000539,
+    "0.6": 110.21512903289215,
+    "0.7": 121.07005430529111,
+    "0.8": 137.05115166679616,
+    "0.9": 164.17861316131217,
+    "1.0": 253.71424685316984
+  },
+  "lambda_grid_test_ppl": {
+    "0.0": 86.25646041388845,
+    "0.1": 84.13601924763081,
+    "0.2": 85.86554948077564,
+    "0.3": 88.93672981401764,
+    "0.4": 93.23860176333963,
+    "0.5": 98.9736873397946,
+    "0.6": 106.6209650583367,
+    "0.7": 117.12759838245613,
+    "0.8": 132.5395193119631,
+    "0.9": 158.57979578171762,
+    "1.0": 243.66351361060362
+  },
+  "best_lambda": 0.1,
+  "validation_ppl": 87.45602071479007,
+  "test_ppl": 84.13601924763081,
+  "blimp": {
+    "overall": 0.6874,
+    "per_paradigm": {
+      "anaphor_gender_agreement": {
+        "field": "morphology",
+        "correct": 473,
+        "n": 1000,
+        "acc": 0.473
+      },
+      "determiner_noun_agreement_1": {
+        "field": "morphology",
+        "correct": 788,
+        "n": 1000,
+        "acc": 0.788
+      },
+      "regular_plural_subject_verb_agreement_1": {
+        "field": "morphology",
+        "correct": 817,
+        "n": 1000,
+        "acc": 0.817
+      },
+      "irregular_past_participle_adjectives": {
+        "field": "morphology",
+        "correct": 947,
+        "n": 1000,
+        "acc": 0.947
+      },
+      "wh_island": {
+        "field": "syntax",
+        "correct": 549,
+        "n": 1000,
+        "acc": 0.549
+      },
+      "adjunct_island": {
+        "field": "syntax",
+        "correct": 511,
+        "n": 1000,
+        "acc": 0.511
+      },
+      "drop_argument": {
+        "field": "syntax",
+        "correct": 371,
+        "n": 1000,
+        "acc": 0.371
+      },
+      "npi_present_1": {
+        "field": "semantics",
+        "correct": 432,
+        "n": 1000,
+        "acc": 0.432
+      },
+      "principle_A_domain_1": {
+        "field": "syntax_semantics",
+        "correct": 987,
+        "n": 1000,
+        "acc": 0.987
+      },
+      "existential_there_quantifiers_1": {
+        "field": "semantics",
+        "correct": 999,
+        "n": 1000,
+        "acc": 0.999
+      }
+    }
+  },
+  "blimp_overall_by_lambda": {
+    "0.0": 0.6988,
+    "0.1": 0.6874,
+    "0.2": 0.6801,
+    "0.3": 0.6743,
+    "0.4": 0.6676,
+    "0.5": 0.659,
+    "0.6": 0.6517,
+    "0.7": 0.6443,
+    "0.8": 0.6342,
+    "0.9": 0.6214,
+    "1.0": 0.5629
+  },
+  "bucket_analysis_test": {
+    "4-gram seen in train": {
+      "share": 0.14745051386272762,
+      "KN 4-gram": 7.4058837904521955,
+      "AWD-LSTM": 7.232121561888211,
+      "Hybrid (\u03bb=0.1)": 6.445279356747103
+    },
+    "4-gram unseen, bigram seen": {
+      "share": 0.6505320379366181,
+      "KN 4-gram": 144.3477397117002,
+      "AWD-LSTM": 58.18703779924323,
+      "Hybrid (\u03bb=0.1)": 56.761902971331466
+    },
+    "bigram unseen": {
+      "share": 0.20201744820065431,
+      "KN 4-gram": 16842.057529498335,
+      "AWD-LSTM": 1871.0095558623357,
+      "Hybrid (\u03bb=0.1)": 1948.7604492678604
+    },
+    "target freq > 10k": {
+      "share": 0.4284598988797462,
+      "KN 4-gram": 16.27661368649673,
+      "AWD-LSTM": 7.837057066514918,
+      "Hybrid (\u03bb=0.1)": 7.897456592131801
+    },
+    "target freq 1k-10k": {
+      "share": 0.15311374376259873,
+      "KN 4-gram": 158.18053662021592,
+      "AWD-LSTM": 58.99463199368437,
+      "Hybrid (\u03bb=0.1)": 58.40168027576815
+    },
+    "target freq 100-1k": {
+      "share": 0.24122633092098741,
+      "KN 4-gram": 1258.7847320146602,
+      "AWD-LSTM": 355.11431973436737,
+      "Hybrid (\u03bb=0.1)": 336.2366341619126
+    },
+    "target freq <= 100": {
+      "share": 0.17720002643666766,
+      "KN 4-gram": 26285.35668478466,
+      "AWD-LSTM": 5758.822824107796,
+      "Hybrid (\u03bb=0.1)": 5337.707060324734
+    },
+    "target = <unk>": {
+      "share": 0.05569875417203662,
+      "KN 4-gram": 39.39917010563369,
+      "AWD-LSTM": 23.901939226024023,
+      "Hybrid (\u03bb=0.1)": 23.809859742521503
+    }
+  },
+  "frac_test_tokens_hybrid_better_than_awd": 0.23442301972836324,
+  "comparison": {
+    "Task 1: KN 4-gram": {
+      "validation_ppl": 253.71424685316984,
+      "test_ppl": 243.66351361060362,
+      "blimp": 0.5629
+    },
+    "Task 2: AWD-LSTM": {
+      "validation_ppl": 90.51282036513066,
+      "test_ppl": 86.25646041388845,
+      "blimp": 0.6988
+    },
+    "Task 3: Hybrid (\u03bb=0.1)": {
+      "validation_ppl": 87.45602071479007,
+      "test_ppl": 84.13601924763081,
+      "blimp": 0.6874
+    }
+  }
+}

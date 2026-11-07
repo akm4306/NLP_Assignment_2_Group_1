@@ -1,0 +1,588 @@
+{
+  "vocab_size": 30001,
+  "train_tokens": 2060762,
+  "unique_ngrams": {
+    "1": 30001,
+    "2": 594574,
+    "3": 1388053,
+    "4": 1814348
+  },
+  "eval_tokens": {
+    "validation": 214969,
+    "test": 242088
+  },
+  "kn_lambda_tuning": {
+    "2": {
+      "0.1": 626.0706494492745,
+      "0.2": 497.69484715982577,
+      "0.3": 428.53833926958333,
+      "0.4": 384.35754390144876,
+      "0.5": 353.8822711508253,
+      "0.6": 332.1780492899266,
+      "0.7": 316.8212845630102,
+      "0.8": 306.70310669173267,
+      "0.9": 301.7749104644359,
+      "1.0": 303.99192970148414
+    },
+    "3": {
+      "0.1": 492.2206364116417,
+      "0.2": 382.76711700258494,
+      "0.3": 329.18919053352937,
+      "0.4": 297.5671154608241,
+      "0.5": 277.5998855904117,
+      "0.6": 265.01774812170385,
+      "0.7": 257.82847386056125,
+      "0.8": 255.17937480622663,
+      "0.9": 257.0477755176318,
+      "1.0": 264.59361743915935
+    },
+    "4": {
+      "0.1": 463.9263102552961,
+      "0.2": 361.799604280919,
+      "0.3": 313.1581538305786,
+      "0.4": 285.29379780493093,
+      "0.5": 268.4399216984456,
+      "0.6": 258.6011041312376,
+      "0.7": 253.94442721600723,
+      "0.8": 253.71424685316984,
+      "0.9": 257.93181731174684,
+      "1.0": 267.67418838133176
+    }
+  },
+  "kn_best_lambda": {
+    "2": 0.9,
+    "3": 0.8,
+    "4": 0.8
+  },
+  "good_turing_stats": {
+    "2": {
+      "N_r": [
+        394611.0,
+        85005.0,
+        35737.0,
+        19166.0,
+        11885.0,
+        8410.0
+      ],
+      "d_r": [
+        0.3473765876025349,
+        0.576456118552329,
+        0.6732998232010338,
+        0.7421656676922985,
+        0.8270178642208872
+      ],
+      "histories_floored": 180
+    },
+    "3": {
+      "N_r": [
+        1184394.0,
+        116177.0,
+        34934.0,
+        16399.0,
+        9299.0,
+        5808.0
+      ],
+      "d_r": [
+        0.17181217628524656,
+        0.4344031742759856,
+        0.6145635266417125,
+        0.6999811158742408,
+        0.7419061432218071
+      ],
+      "histories_floored": 1510
+    },
+    "4": {
+      "N_r": [
+        1700961.0,
+        76706.0,
+        17153.0,
+        7171.0,
+        3715.0,
+        2255.0
+      ],
+      "d_r": [
+        0.08289642657981273,
+        0.3301014919092728,
+        0.5538659446218308,
+        0.6447477677518595,
+        0.7262206544872487
+      ],
+      "histories_floored": 1698
+    }
+  },
+  "good_turing_min_backoff": 0.001,
+  "good_turing_without_floor": {
+    "2": {
+      "val_zero_prob_tokens": 23,
+      "test_zero_prob_tokens": 14
+    },
+    "3": {
+      "val_zero_prob_tokens": 106,
+      "test_zero_prob_tokens": 147
+    },
+    "4": {
+      "val_zero_prob_tokens": 145,
+      "test_zero_prob_tokens": 225
+    }
+  },
+  "perplexity": {
+    "Add-k (k=1) | n=1": {
+      "validation": 864.2541283122746,
+      "test": 827.5184963278743
+    },
+    "Add-k (k=1) | n=2": {
+      "validation": 1965.2992416839486,
+      "test": 1849.2456243248419
+    },
+    "Add-k (k=1) | n=3": {
+      "validation": 11877.844085374507,
+      "test": 11467.639662350983
+    },
+    "Add-k (k=1) | n=4": {
+      "validation": 23417.083965826772,
+      "test": 23225.54297007444
+    },
+    "Add-k (k=0.5) | n=1": {
+      "validation": 863.0441767241349,
+      "test": 826.3412080120875
+    },
+    "Add-k (k=0.5) | n=2": {
+      "validation": 1478.2605990823547,
+      "test": 1388.0695787660854
+    },
+    "Add-k (k=0.5) | n=3": {
+      "validation": 9646.217514816952,
+      "test": 9258.493354600176
+    },
+    "Add-k (k=0.5) | n=4": {
+      "validation": 21714.540451236397,
+      "test": 21497.86213609811
+    },
+    "Add-k (k=0.1) | n=1": {
+      "validation": 862.2833670179184,
+      "test": 825.5986700777265
+    },
+    "Add-k (k=0.1) | n=2": {
+      "validation": 855.2411346685116,
+      "test": 803.3685573986154
+    },
+    "Add-k (k=0.1) | n=3": {
+      "validation": 5915.093339381379,
+      "test": 5609.755796630273
+    },
+    "Add-k (k=0.1) | n=4": {
+      "validation": 17782.592598736133,
+      "test": 17531.647785951605
+    },
+    "Good-Turing (Katz) | n=1": {
+      "validation": 862.1269281783135,
+      "test": 825.4455691672285
+    },
+    "Good-Turing (Katz) | n=2": {
+      "validation": 313.95398274060307,
+      "test": 296.15132995517814
+    },
+    "Good-Turing (Katz) | n=3": {
+      "validation": 281.1989042645552,
+      "test": 267.0522342163843
+    },
+    "Good-Turing (Katz) | n=4": {
+      "validation": 287.80293469648325,
+      "test": 275.9364660135508
+    },
+    "Kneser-Ney (d=0.75, \u03bb=1) | n=1": {
+      "validation": 862.1269281783135,
+      "test": 825.4455691672285
+    },
+    "Kneser-Ney (d=0.75, \u03bb=0.9) | n=2": {
+      "validation": 301.7749104644359,
+      "test": 285.2996222960823
+    },
+    "Kneser-Ney (d=0.75, \u03bb=0.8) | n=3": {
+      "validation": 255.17937480622663,
+      "test": 242.93017943379368
+    },
+    "Kneser-Ney (d=0.75, \u03bb=0.8) | n=4": {
+      "validation": 253.71424685316984,
+      "test": 243.66351361060362
+    }
+  },
+  "main_table_4gram": {
+    "Add-k (k=1)": {
+      "validation": 23417.083965826772,
+      "test": 23225.54297007444
+    },
+    "Add-k (k=0.5)": {
+      "validation": 21714.540451236397,
+      "test": 21497.86213609811
+    },
+    "Add-k (k=0.1)": {
+      "validation": 17782.592598736133,
+      "test": 17531.647785951605
+    },
+    "Good-Turing (Katz)": {
+      "validation": 287.80293469648325,
+      "test": 275.9364660135508
+    },
+    "Kneser-Ney (d=0.75, \u03bb=0.8)": {
+      "validation": 253.71424685316984,
+      "test": 243.66351361060362
+    }
+  },
+  "best_variant": "Kneser-Ney (d=0.75, \u03bb=0.8)",
+  "blimp": {
+    "Add-k (k=1)": {
+      "overall": 0.1172,
+      "per_paradigm": {
+        "anaphor_gender_agreement": {
+          "field": "morphology",
+          "correct": 16,
+          "n": 1000,
+          "acc": 0.016
+        },
+        "determiner_noun_agreement_1": {
+          "field": "morphology",
+          "correct": 1,
+          "n": 1000,
+          "acc": 0.001
+        },
+        "regular_plural_subject_verb_agreement_1": {
+          "field": "morphology",
+          "correct": 62,
+          "n": 1000,
+          "acc": 0.062
+        },
+        "irregular_past_participle_adjectives": {
+          "field": "morphology",
+          "correct": 0,
+          "n": 1000,
+          "acc": 0.0
+        },
+        "wh_island": {
+          "field": "syntax",
+          "correct": 87,
+          "n": 1000,
+          "acc": 0.087
+        },
+        "adjunct_island": {
+          "field": "syntax",
+          "correct": 69,
+          "n": 1000,
+          "acc": 0.069
+        },
+        "drop_argument": {
+          "field": "syntax",
+          "correct": 110,
+          "n": 1000,
+          "acc": 0.11
+        },
+        "npi_present_1": {
+          "field": "semantics",
+          "correct": 20,
+          "n": 1000,
+          "acc": 0.02
+        },
+        "principle_A_domain_1": {
+          "field": "syntax_semantics",
+          "correct": 9,
+          "n": 1000,
+          "acc": 0.009
+        },
+        "existential_there_quantifiers_1": {
+          "field": "semantics",
+          "correct": 798,
+          "n": 1000,
+          "acc": 0.798
+        }
+      }
+    },
+    "Add-k (k=0.5)": {
+      "overall": 0.1171,
+      "per_paradigm": {
+        "anaphor_gender_agreement": {
+          "field": "morphology",
+          "correct": 16,
+          "n": 1000,
+          "acc": 0.016
+        },
+        "determiner_noun_agreement_1": {
+          "field": "morphology",
+          "correct": 1,
+          "n": 1000,
+          "acc": 0.001
+        },
+        "regular_plural_subject_verb_agreement_1": {
+          "field": "morphology",
+          "correct": 62,
+          "n": 1000,
+          "acc": 0.062
+        },
+        "irregular_past_participle_adjectives": {
+          "field": "morphology",
+          "correct": 0,
+          "n": 1000,
+          "acc": 0.0
+        },
+        "wh_island": {
+          "field": "syntax",
+          "correct": 88,
+          "n": 1000,
+          "acc": 0.088
+        },
+        "adjunct_island": {
+          "field": "syntax",
+          "correct": 67,
+          "n": 1000,
+          "acc": 0.067
+        },
+        "drop_argument": {
+          "field": "syntax",
+          "correct": 110,
+          "n": 1000,
+          "acc": 0.11
+        },
+        "npi_present_1": {
+          "field": "semantics",
+          "correct": 20,
+          "n": 1000,
+          "acc": 0.02
+        },
+        "principle_A_domain_1": {
+          "field": "syntax_semantics",
+          "correct": 9,
+          "n": 1000,
+          "acc": 0.009
+        },
+        "existential_there_quantifiers_1": {
+          "field": "semantics",
+          "correct": 798,
+          "n": 1000,
+          "acc": 0.798
+        }
+      }
+    },
+    "Add-k (k=0.1)": {
+      "overall": 0.1172,
+      "per_paradigm": {
+        "anaphor_gender_agreement": {
+          "field": "morphology",
+          "correct": 16,
+          "n": 1000,
+          "acc": 0.016
+        },
+        "determiner_noun_agreement_1": {
+          "field": "morphology",
+          "correct": 1,
+          "n": 1000,
+          "acc": 0.001
+        },
+        "regular_plural_subject_verb_agreement_1": {
+          "field": "morphology",
+          "correct": 62,
+          "n": 1000,
+          "acc": 0.062
+        },
+        "irregular_past_participle_adjectives": {
+          "field": "morphology",
+          "correct": 0,
+          "n": 1000,
+          "acc": 0.0
+        },
+        "wh_island": {
+          "field": "syntax",
+          "correct": 87,
+          "n": 1000,
+          "acc": 0.087
+        },
+        "adjunct_island": {
+          "field": "syntax",
+          "correct": 69,
+          "n": 1000,
+          "acc": 0.069
+        },
+        "drop_argument": {
+          "field": "syntax",
+          "correct": 110,
+          "n": 1000,
+          "acc": 0.11
+        },
+        "npi_present_1": {
+          "field": "semantics",
+          "correct": 20,
+          "n": 1000,
+          "acc": 0.02
+        },
+        "principle_A_domain_1": {
+          "field": "syntax_semantics",
+          "correct": 9,
+          "n": 1000,
+          "acc": 0.009
+        },
+        "existential_there_quantifiers_1": {
+          "field": "semantics",
+          "correct": 798,
+          "n": 1000,
+          "acc": 0.798
+        }
+      }
+    },
+    "Good-Turing (Katz)": {
+      "overall": 0.5729,
+      "per_paradigm": {
+        "anaphor_gender_agreement": {
+          "field": "morphology",
+          "correct": 241,
+          "n": 1000,
+          "acc": 0.241
+        },
+        "determiner_noun_agreement_1": {
+          "field": "morphology",
+          "correct": 490,
+          "n": 1000,
+          "acc": 0.49
+        },
+        "regular_plural_subject_verb_agreement_1": {
+          "field": "morphology",
+          "correct": 509,
+          "n": 1000,
+          "acc": 0.509
+        },
+        "irregular_past_participle_adjectives": {
+          "field": "morphology",
+          "correct": 739,
+          "n": 1000,
+          "acc": 0.739
+        },
+        "wh_island": {
+          "field": "syntax",
+          "correct": 707,
+          "n": 1000,
+          "acc": 0.707
+        },
+        "adjunct_island": {
+          "field": "syntax",
+          "correct": 355,
+          "n": 1000,
+          "acc": 0.355
+        },
+        "drop_argument": {
+          "field": "syntax",
+          "correct": 440,
+          "n": 1000,
+          "acc": 0.44
+        },
+        "npi_present_1": {
+          "field": "semantics",
+          "correct": 448,
+          "n": 1000,
+          "acc": 0.448
+        },
+        "principle_A_domain_1": {
+          "field": "syntax_semantics",
+          "correct": 976,
+          "n": 1000,
+          "acc": 0.976
+        },
+        "existential_there_quantifiers_1": {
+          "field": "semantics",
+          "correct": 824,
+          "n": 1000,
+          "acc": 0.824
+        }
+      }
+    },
+    "Kneser-Ney (d=0.75, \u03bb=0.8)": {
+      "overall": 0.5629,
+      "per_paradigm": {
+        "anaphor_gender_agreement": {
+          "field": "morphology",
+          "correct": 236,
+          "n": 1000,
+          "acc": 0.236
+        },
+        "determiner_noun_agreement_1": {
+          "field": "morphology",
+          "correct": 526,
+          "n": 1000,
+          "acc": 0.526
+        },
+        "regular_plural_subject_verb_agreement_1": {
+          "field": "morphology",
+          "correct": 561,
+          "n": 1000,
+          "acc": 0.561
+        },
+        "irregular_past_participle_adjectives": {
+          "field": "morphology",
+          "correct": 786,
+          "n": 1000,
+          "acc": 0.786
+        },
+        "wh_island": {
+          "field": "syntax",
+          "correct": 521,
+          "n": 1000,
+          "acc": 0.521
+        },
+        "adjunct_island": {
+          "field": "syntax",
+          "correct": 348,
+          "n": 1000,
+          "acc": 0.348
+        },
+        "drop_argument": {
+          "field": "syntax",
+          "correct": 395,
+          "n": 1000,
+          "acc": 0.395
+        },
+        "npi_present_1": {
+          "field": "semantics",
+          "correct": 405,
+          "n": 1000,
+          "acc": 0.405
+        },
+        "principle_A_domain_1": {
+          "field": "syntax_semantics",
+          "correct": 978,
+          "n": 1000,
+          "acc": 0.978
+        },
+        "existential_there_quantifiers_1": {
+          "field": "semantics",
+          "correct": 873,
+          "n": 1000,
+          "acc": 0.873
+        }
+      }
+    }
+  },
+  "normalisation_check": {
+    "Add-k (k=1)": [
+      1.0000000000000004,
+      1.0000000000000004,
+      1.0000000000000004
+    ],
+    "Add-k (k=0.5)": [
+      1.0000000000000004,
+      1.0000000000000004,
+      1.0000000000000004
+    ],
+    "Add-k (k=0.1)": [
+      1.0000000000000002,
+      1.0000000000000002,
+      1.0000000000000002
+    ],
+    "Good-Turing (Katz)": [
+      1.0000000000000002,
+      0.9999999999999998,
+      1.0
+    ],
+    "Kneser-Ney (d=0.75, \u03bb=0.8)": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "runtime_s": 52.721657037734985
+}

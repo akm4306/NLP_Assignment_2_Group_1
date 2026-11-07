@@ -1,0 +1,71 @@
+{
+  "best_epoch": 49,
+  "nhid": 1150,
+  "validation_ppl": 90.51282036513066,
+  "test_ppl": 86.25646041388845,
+  "blimp": {
+    "overall": 0.6988,
+    "per_paradigm": {
+      "anaphor_gender_agreement": {
+        "field": "morphology",
+        "correct": 533,
+        "n": 1000,
+        "acc": 0.533
+      },
+      "determiner_noun_agreement_1": {
+        "field": "morphology",
+        "correct": 834,
+        "n": 1000,
+        "acc": 0.834
+      },
+      "regular_plural_subject_verb_agreement_1": {
+        "field": "morphology",
+        "correct": 826,
+        "n": 1000,
+        "acc": 0.826
+      },
+      "irregular_past_participle_adjectives": {
+        "field": "morphology",
+        "correct": 938,
+        "n": 1000,
+        "acc": 0.938
+      },
+      "wh_island": {
+        "field": "syntax",
+        "correct": 533,
+        "n": 1000,
+        "acc": 0.533
+      },
+      "adjunct_island": {
+        "field": "syntax",
+        "correct": 535,
+        "n": 1000,
+        "acc": 0.535
+      },
+      "drop_argument": {
+        "field": "syntax",
+        "correct": 382,
+        "n": 1000,
+        "acc": 0.382
+      },
+      "npi_present_1": {
+        "field": "semantics",
+        "correct": 441,
+        "n": 1000,
+        "acc": 0.441
+      },
+      "principle_A_domain_1": {
+        "field": "syntax_semantics",
+        "correct": 968,
+        "n": 1000,
+        "acc": 0.968
+      },
+      "existential_there_quantifiers_1": {
+        "field": "semantics",
+        "correct": 998,
+        "n": 1000,
+        "acc": 0.998
+      }
+    }
+  }
+}
